@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Min IT1 Portefølje</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Familieoppgave-manager</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Min Portefølje!</h1>
-    <nav>
-      <a href="index.html">Hjem</a>
-      <a href="prosjekter.html">Prosjekter</a>
-      <a href="om.html">Om meg</a>
-    </nav>
-  </header>
-  <main>
-    <h2>Velkommen!</h2>
-    <p>Dette er min portefølje i IT1-faget. Her vil jeg samle alle prosjektene jeg lager gjennom skoleåret.</p>
-  </main>
-  <div class="index">
-    <img src="360_F_341951832_6iR8kLL2MgDaNDfbBJGNSZy6EACU7rZ4.jpg" alt="velkommen bilde">
-  </div>
-  <footer>
-    <p> 2025 Yeva</p>
-  </footer>
+    <h1>🏠 Familieoppgave-manager</h1>
+    <main class="main-container">
+        <section class="left-column">
+            <section class="controls">
+                <h2>Legg til ny oppgave</h2>
+                <div class="form-row">
+                    <select id="userSelect"></select>
+                    <select id="choreSelect"></select>
+                    <button id="addBtn">Legg til i listen</button>
+                </div>
+            </section>
+
+            <section class="list-container">
+                <h2>Dagens oppgaveliste</h2>
+                <div id="taskList" class="scrollable"></div>
+            </section>
+        </section>
+
+        <aside class="right-column">
+            <section class="ranking-container">
+                <h2>🏆 Brukerrangering</h2>
+                <ul id="rankingList"></ul>
+            </section>
+        </aside>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
