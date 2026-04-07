@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>Familieoppgave-manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1> Familieoppgave-manager</h1>
+    <main class="main-container">
+        <section class="left-column">
+            <section class="controls">
+                <h2>Legg til ny oppgave</h2>
+                <div class="form-row">
+                    <select id="userSelect"></select>
+                    <select id="choreSelect"></select>
+                    <button id="addBtn">Legg til i listen</button>
+                </div>
+            </section>
+
+            <section class="list-container">
+                <h2>Dagens oppgaveliste</h2>
+                <div id="taskList" class="scrollable"></div>
+            </section>
+        </section>
+
+        <aside class="right-column">
+            <section class="ranking-container">
+                <h2> Brukerrangering</h2>
+                <ul id="rankingList"></ul>
+            </section>
+        </aside>
+
+        <a href="personvern.html">Personvern (GDPR)</a>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

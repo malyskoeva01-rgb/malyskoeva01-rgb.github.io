@@ -1,0 +1,134 @@
+body { font-family: 'Segoe UI', sans-serif; background: #f0f2f5; padding: 20px; color: #333; }
+h1 { text-align: center; margin-bottom: 30px; }
+.main-container {
+    display: flex;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.left-column {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.scrollable {
+    max-height: 500px; 
+    overflow-y: auto;
+}
+
+
+.right-column {
+    flex: 1;
+    position: sticky;
+    top: 20px; 
+    height: fit-content;
+}
+
+.controls {
+     background: white;
+     padding: 20px; 
+     border-radius: 12px; 
+     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+     }
+.form-row { 
+    display: flex; 
+    gap: 10px;
+     flex-wrap: wrap;
+     }
+select, button {
+     padding: 12px; 
+     border-radius: 8px;
+      border: 1px solid #ddd; 
+      flex: 1; 
+      min-width: 150px;
+     }
+#addBtn { 
+    background: #5cb85c;
+     color: white;
+      border: none; 
+      cursor: pointer; 
+      font-weight: bold; 
+      flex: 0.5;
+     }
+#addBtn:hover { 
+    background: #4cae4c; 
+}
+
+
+.task-card { 
+    background: white; 
+    padding: 15px; 
+    border-radius: 10px; 
+    margin-bottom: 10px; 
+    border-left: 6px solid #5cb85c;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: 0.3s; 
+}
+
+.category-tag { 
+    background: #e9ecef; 
+    padding: 2px 8px; 
+    border-radius: 4px; 
+    font-size: 0.8em; 
+    margin-left: 5px; 
+    color: #495057; 
+}
+
+.task-actions { 
+    display: flex; 
+    gap: 5px; }
+
+
+.del-btn {
+     background: #d9534f;
+      color: white; 
+      border: none; 
+      padding: 8px; 
+      border-radius: 6px; 
+      cursor: pointer; 
+      width: 40px; 
+    
+}
+
+
+.done-checkbox { 
+    width: 20px; 
+    height: 20px; 
+    cursor: pointer; 
+
+}
+
+
+.ranking-container {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    max-height: 600px;
+    overflow-y: auto;
+}
+.ranking-container ul {
+     list-style: none; 
+     padding: 0; 
+     margin: 0;
+     }
+
+
+.ranking-container li { 
+    padding: 8px 10px;
+    border-bottom: 1px solid #eee; 
+    font-weight: bold;
+ }
+
+
+@media (max-width: 900px) {
+    .main-container { flex-direction: column; }
+    .right-column { position: relative; top: 0; }
+}
